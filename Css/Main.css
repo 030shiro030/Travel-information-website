@@ -1,0 +1,162 @@
+/* imageSlider */
+
+.imageSlider{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 80px;
+  overflow: hidden;
+}
+
+.imageSlider_slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+input{
+    display: none;
+}
+
+.imageSlide{
+    width: 20%;
+    transition: 2s;
+}
+
+.imageSlide img,.imageSlide video{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* manual navigation and auto navigation*/
+
+.navigation_manual,.navigation_auto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.manual-btn,.navigation_auto div{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 100px;
+    transition: 1s;
+    cursor: pointer;
+    outline:none;
+}
+
+.manual-btn:not(:last-child),.navigation_auto div:not(:last-child){
+    margin-right: 30px;
+}
+
+.manual-btn:hover,.navigation_auto div:hover{
+    background-color: rgb(255, 175, 255);
+}
+
+#radio1:checked ~ .navigation_auto .auto-btn1{
+    background-color: rgb(255, 175, 255);
+}
+
+#radio2:checked ~ .navigation_auto .auto-btn2{
+    background-color: rgb(255, 175, 255);
+}
+
+#radio3:checked ~ .navigation_auto .auto-btn3{
+    background-color: rgb(255, 175, 255);
+}
+
+#radio4:checked ~ .navigation_auto .auto-btn4{
+    background-color: rgb(255, 175, 255);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* 熱門地區 */
+.popularAreas_h1_text-align{
+    text-align: center;
+}
+
+.popularAreas_h1{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(241, 93, 185);
+}
+
+.popularAreas_image_text-align{
+    text-align: center;
+}
+
+.popularAreas_image{
+    position: relative;
+    top: 100px;
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.popularAreas_image .images{
+    margin: 10px;
+}
+
+.popularAreas_image h3{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(241, 93, 185);
+}
+
+.popularAreas_imageTitle{
+    width: 100%;
+    position: relative;
+    bottom: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.images{
+    transition: transform 0.8s ease-in-out;
+}
+
+.images:hover{
+    transform: rotateY(360deg);
+}
+
+@media screen and (max-width: 1200px) {
+    .popularAreas_image{
+        display: block;
+        
+    }
+
+    .popularAreas_image img{
+        height: 190px;
+        
+    }
+
+    .popularAreas_imageTitle{
+        width: 210px;
+        justify-self: center;
+        
+        
+    }
+}

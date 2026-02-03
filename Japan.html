@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/Japan.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+                <br><br><br>
+                <div class="japanImage_Div">
+                    <img class="japanImage" src="./images/Japan.jpg">
+                </div>
+                <div class="main">
+                    <br>
+                    <h1 id="attractions-Name">日本</h1>
+                    <h3 class="h3" id="attractions-Introduction01">日本是一個充滿魅力的國家，以其獨特的文化、悠久的歷史和壯麗的自然風光而聞名於世。這個由四個主要島嶼組成的國家——本州、北海道、九州和四國，提供了豐富多樣的旅遊體驗，從繁華的都市生活到寧靜的鄉村風景無所不包。文化融合</h3>
+                    <h3 id="attractions-Introduction02">以下是一些主要的旅遊景點以及它們的歷史和文化詳細介紹：</h3>
+                    <br><br><hr>
+                    <br><br>
+                    <div>
+                        <h2 id="attractions_title" class="attractions_title">旅遊景點</h2>
+                        <div class="attractions-01">
+                            <img class="attractionsImage" src="./images/MountFuji.jpg">
+                            <h2 id="attractions-01_Name">富士山</h2>
+                            <h4 id="attractions-01_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-01-subTitle01-Text">富士山是日本最高的山峰，海拔3,776米，長期以來被視為日本的象徵。它在歷史上被認為是神聖的，早在公元前的歷史記載中便已有提及。富士山是一座活火山，最後一次噴發發生在1707年，形成了現在的美麗景觀。</h4><br>
+                            <h4 id="attractions-01_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-01-subTitle02-Text">富士山被許多文學作品、藝術作品和詩歌所讚美，成為了日本文化的重要元素。它不僅是信仰的象徵，也是無數藝術家的靈感來源，經典的浮世繪《富嶽三十六景》便是對富士山的讚美。</h4><br>
+                            <h4 id="attractions-01_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-01_li01"><h4 id="attractions-01_li01_subTitle" class="subTitle">1. 五合目 ：</h4><h4 id="attractions-01_li01_Text">遊客可以乘車或徒步到達五合目，欣賞壯觀的景色，這裡也是登山者的起點。</h4></li>
+                                <li class="attractions-01_li02"><h4 id="attractions-01_li02_subTitle" class="subTitle">2. 富士山本宫淺間神社 ：</h4><h4 id="attractions-01_li02_Text">位於富士山腳下的神社，供奉著富士山的守護神，是朝聖者必訪的地方。</h4></li>
+                                <li class="attractions-01_li03"><h4 id="attractions-01_li03_subTitle" class="subTitle">3. 富士湖 ：</h4><h4 id="attractions-01_li03_Text">如河口湖和山中湖，提供絕佳的觀賞角度，夏季可進行划船和釣魚等活動。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d416151.16031943524!2d138.9281475176127!3d35.4255475337294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x6018640ba43192e3%3A0xd32c3a9d146f8df!2z576955Sw5qmf5aC0ICjmnbHkuqzlnIvpmpvmqZ_loLQpIOaXpeacrOOAkjE0NC0wMDQxIFRva3lvLCBPdGEgQ2l0eSwgSGFuZWRha3Vrbw!3m2!1d35.5482964!2d139.7779951!4m5!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2z5a-M5aOr5bGxIOaXpeacrOOAkjQxOC0wMTEyIOmdnOWyoee4o-WvjOWjq-WuruW4giBLaXRheWFtYQ!3m2!1d35.3606255!2d138.7273634!5e0!3m2!1szh-TW!2shk!4v1769081964161!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/NHo3ADq2-K8?si=3z2nuCX8YSwj5NsL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-02">
+                            <img class="attractionsImage" src="./images/Kyoto.jpg">
+                            <h2 id="attractions-02_Name">京都</h2>
+                            <h4 id="attractions-02_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-02-subTitle01-Text">京都曾是日本的首都，長達千年，見證了日本的繁榮與衰落。自794年平安京建立以來，京都成為了日本文化、藝術及學術活動的中心，至今仍保存著大量的歷史遺跡</h4><br>
+                            <h4 id="attractions-02_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-02-subTitle02-Text">作為日本的文化之都，京都擁有豐富的傳統文化，包括優雅的茶道、花道和和服。這裡的許多寺廟和神社被列入世界遺產，展示了日本古代建築的美。</h4><br>
+                            <h4 id="attractions-02_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-02_li01"><h4 id="attractions-02_li01_subTitle" class="subTitle">1. 金閣寺 ：</h4><h4 id="attractions-02_li01_Text">又名鹿苑寺，是一座金箔裝飾的禪寺，屬於世界文化遺產，四周的庭院與池塘相映成趣。</h4></li>
+                                <li class="attractions-02_li02"><h4 id="attractions-02_li02_subTitle" class="subTitle">2. 清水寺 ：</h4><h4 id="attractions-02_li02_Text">這座古老的寺廟以其懸空的木製舞台而聞名，是欣賞櫻花和秋葉的理想場所。</h4></li>
+                                <li class="attractions-02_li03"><h4 id="attractions-02_li03_subTitle" class="subTitle">3. 嵐山竹林 ：</h4><h4 id="attractions-02_li03_Text">這片竹林提供寧靜的步道，讓遊客沉浸在自然之中，也是攝影愛好者的天堂。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d419872.0139882706!2d135.17274721311577!3d34.698871070988574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6000b91323cdfaf7%3A0xf171a79f8d908f88!2z6Zec6KW_5ZyL6Zqb5qmf5aC0IOaXpeacrOOAkjU0OS0wMDAxIE9zYWthLCBJenVtaXNhbm8sIFNlbnNodWt1a29raXRhLCAx55Wq5Zyw!3m2!1d34.431999399999995!2d135.23660189999998!4m5!1s0x6001a8d6cd3cc3f1%3A0xc0961d366bbb1d3d!2z5Lqs6YO95biCIOaXpeacrOS6rOmDveW6nA!3m2!1d35.011564!2d135.7681489!5e0!3m2!1szh-TW!2shk!4v1769082407686!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/FIj6y3U2QwM?si=HrkzZ81vGLoM08En" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-03">
+                            <img class="attractionsImage" src="./images/Osaka.jpg">
+                            <h2 id="attractions-03_Name">大阪</h2>
+                            <h4 id="attractions-03_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-03-subTitle01-Text">大阪是日本的第三大城市，歷史可追溯到古代，曾是日本的商業中心之一。從大阪城的建立到其在戰國時代的影響力，大阪見證了多次歷史變遷。</h4><br>
+                            <h4 id="attractions-03_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-03-subTitle02-Text">大阪以其豐富的飲食文化而聞名，尤其是小吃文化，如章魚燒和串燒等，深受當地人和遊客的喜愛。此外，大阪人熱情好客，形成了獨特的市民文化。</h4><br>
+                            <h4 id="attractions-03_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-03_li01"><h4 id="attractions-03_li01_subTitle" class="subTitle">1. 大阪城 ：</h4><h4 id="attractions-03_li01_Text">這座歷史悠久的城堡以其雄偉的建築和美麗的公園而著稱，是遊客了解大阪歷史的好去處。</h4></li>
+                                <li class="attractions-03_li02"><h4 id="attractions-03_li02_subTitle" class="subTitle">2. 道頓堀 ：</h4><h4 id="attractions-03_li02_Text">大阪的娛樂和美食中心，燈火通明的招牌和豐富的小吃讓人流連忘返。</h4></li>
+                                <li class="attractions-03_li03"><h4 id="attractions-03_li03_subTitle" class="subTitle">3. 天保山大觀覽車 ：</h4><h4 id="attractions-03_li03_Text">位於大阪港的摩天輪，提供壯觀的城市和海灣景色，特別是在夜晚。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d210288.11434029764!2d135.2153939321697!3d34.55983947252538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x6000b91323cdfaf7%3A0xf171a79f8d908f88!2z6Zec6KW_5ZyL6Zqb5qmf5aC0IOaXpeacrOOAkjU0OS0wMDAxIE9zYWthLCBJenVtaXNhbm8sIFNlbnNodWt1a29raXRhLCAx55Wq5Zyw!3m2!1d34.431999399999995!2d135.23660189999998!4m5!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2z5aSn6Ziq5biCIOaXpeacrOWkp-mYquW6nA!3m2!1d34.6937249!2d135.5022535!5e0!3m2!1szh-TW!2shk!4v1769082743260!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/_G1-Dh8CwkY?si=3RPAn5Jn_i7YY0lG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./JavaScript/Japan_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

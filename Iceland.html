@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/Iceland.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+                <br><br><br>
+                <div class="icelandImage_Div">
+                    <img class="icelandImage" src="./images/Iceland.jpg">
+                </div>
+                <div class="main">
+                    <br>
+                    <h1 id="attractions-Name">冰島</h1>
+                    <h3 class="h3" id="attractions-Introduction01">冰島是一個獨特的北歐島國，以其壯麗的自然景觀和豐富的文化遺產而聞名。這個位於北大西洋的島嶼國家擁有壯觀的冰川、火山、間歇泉和瀑布，吸引著世界各地的旅客前來探索。</h3>
+                    <h3 id="attractions-Introduction02">以下是一些主要的旅遊景點以及它們的歷史和文化詳細介紹：</h3>
+                    <br><br><hr>
+                    <br><br>
+                    <div>
+                        <h2 id="attractions_title" class="attractions_title">旅遊景點</h2>
+                        <div class="attractions-01">
+                            <img class="attractionsImage" src="./images/GoldenCircle.jpg">
+                            <h2 id="attractions-01_Name">黃金圈</h2>
+                            <h4 id="attractions-01_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-01-subTitle01-Text">黃金圈是冰島最受歡迎的旅遊路線之一，主要包括三個著名景點：辛格維利爾國家公園、古佛斯瀑布和赫琉加爾間歇泉（Geysir）。這條路線展示了冰島的自然奇觀及其地質歷史。辛格維利爾國家公園於2004年被聯合國教科文組織列為世界遺產，意義非凡。</h4><br>
+                            <h4 id="attractions-01_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-01-subTitle02-Text">黃金圈不僅僅是自然景觀，更是冰島歷史和文化的象徵。辛格維利爾是冰島議會創立的地點，被認為是冰島政治的搖籃，這裡的歷史意義對冰島人來說十分重要。</h4><br>
+                            <h4 id="attractions-01_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-01_li01"><h4 id="attractions-01_li01_subTitle" class="subTitle">1. 辛格維利爾國家公園 ：</h4><h4 id="attractions-01_li01_Text">這是一個地質和歷史意義重大的地區，可以看到北美和歐亞兩個板塊的裂縫。</h4></li>
+                                <li class="attractions-01_li02"><h4 id="attractions-01_li02_subTitle" class="subTitle">2. 古佛斯瀑布 ：</h4><h4 id="attractions-01_li02_Text">壯觀的雙層瀑布，當水流跌落時，噴起的水霧在陽光下形成彩虹，美不勝收。</h4></li>
+                                <li class="attractions-01_li03"><h4 id="attractions-01_li03_subTitle" class="subTitle">3. 赫琉加爾間歇泉 ：</h4><h4 id="attractions-01_li03_Text">著名的間歇泉，間歇噴發溫泉的劇烈場景吸引了眾多遊客。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d889176.0656116505!2d-22.828781409396083!3d64.19714500415346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x48d60b4863975ad9%3A0xbd5bca23487a83fb!2zUmV5a2phdsOtayBEb21lc3RpYyBBaXJwb3J0IChSS1YpLCBWYXRuc23DvXJpLCAxMDEgUmV5a2phdsOtaywg5Yaw5bO2!3m2!1d64.13183959999999!2d-21.9466263!4m5!1s0x48d6811ffb13697b%3A0x6b756c8b079262f2!2z6L6b5qC86Z-L5b635YipLS3mrZDnvo7niYjloYrliIboo4Ig5Yaw5bO2IFNlbGZvc3MsIOmDteWNgOe3qOiZnzogODA2!3m2!1d64.2821725!2d-21.0764492!5e0!3m2!1szh-TW!2shk!4v1769130675035!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/jVWXWxhV4TE?si=ojai8d2OGdYx2WVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-02">
+                            <img class="attractionsImage" src="./images/BlueLagoon.jpg">
+                            <h2 id="attractions-02_Name">藍潟湖</h2>
+                            <h4 id="attractions-02_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-02-subTitle01-Text">藍潟湖位於冰島西南部，成立於1976年，最初是一個地熱能的副產品，隨後因其治療特性而受到關注。藍潟湖的水質富含礦物質，具有良好的保健效果，逐漸發展成為知名的療養度假村。</h4><br>
+                            <h4 id="attractions-02_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-02-subTitle02-Text">藍潟湖不僅是冰島著名的旅遊地點，也是當地人日常生活的一部分。這裡的地熱能資源在冰島的可持續發展中起到了重要作用，並展示了冰島人對自然資源的利用和尊重。</h4><br>
+                            <h4 id="attractions-02_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-02_li01"><h4 id="attractions-02_li01_subTitle" class="subTitle">1. 礦物質療愈的溫泉 ：</h4><h4 id="attractions-02_li01_Text">藍潟湖的水富含矽藻泥和硅，對皮膚有良好的保健效果，吸引了眾多遊客來此享受放鬆的沐浴。</h4></li>
+                                <li class="attractions-02_li02"><h4 id="attractions-02_li02_subTitle" class="subTitle">2.  spa 體驗 ：</h4><h4 id="attractions-02_li02_Text">度假村提供各種水療服務和各類護理，讓遊客在自然環境中恢復身心。</h4></li>
+                                <li class="attractions-02_li03"><h4 id="attractions-02_li03_subTitle" class="subTitle">3. 餐廳 ：</h4><h4 id="attractions-02_li03_Text">湖邊的餐廳提供以當地食材為主的美食，遊客在享受美景的同時，也能品味美味佳餚。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d224344.24042523425!2d-22.853133179357766!3d63.94137749656486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x4929fdfce2ab799f%3A0x27f88d0a15c328cd!2z5Yex5aSr5ouJ57at5YWL5ZyL6Zqb5qmf5aC0IOWGsOWztiBLZWZsYXbDrWssIOmDteWNgOe3qOiZnzogMjM1!3m2!1d63.9817117!2d-22.6275776!4m5!1s0x48d61d66aff7df0d%3A0xf3747a894416f06e!2zQmx1ZSBMYWdvb24sIE5vcsOwdXJsasOzc2F2ZWd1ciA5LCAyNDAgR3JpbmRhdsOtaywg5Yaw5bO2!3m2!1d63.8807176!2d-22.4472964!5e0!3m2!1szh-TW!2shk!4v1769130823319!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/D_bXwP3GOko?si=1RiX7HgeAbwntFLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-03">
+                            <img class="attractionsImage" src="./images/Reykjavik.jpg">
+                            <h2 id="attractions-03_Name">雷克雅未克</h2>
+                            <h4 id="attractions-03_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-03-subTitle01-Text">雷克雅未克是冰島的首都，也是全國最大的城市，成立於18世紀。這座城市以其獨特的建築風格和活力四射的藝術氛圍而聞名，成為冰島的文化和政治中心。</h4><br>
+                            <h4 id="attractions-03_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-03-subTitle02-Text">雷克雅未克擁有豐富的藝術和文學傳統，以音樂、文學和美術活動而聞名。每年舉行的音樂節和文學獎使這座城市成為文化愛好者的聚集地。</h4><br>
+                            <h4 id="attractions-03_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-03_li01"><h4 id="attractions-03_li01_subTitle" class="subTitle">1. 哈爾格林姆斯教堂 ：</h4><h4 id="attractions-03_li01_Text">這座壯觀的教堂是雷克雅未克的地標，外觀設計靈感來自於冰島的自然風光，教堂的鐘樓提供壯麗的城市全景。</h4></li>
+                                <li class="attractions-03_li02"><h4 id="attractions-03_li02_subTitle" class="subTitle">2. 國家博物館 ：</h4><h4 id="attractions-03_li02_Text">這裡展示了有關冰島歷史和文化的豐富收藏，遊客可以深入了解冰島的歷史與藝術。</h4></li>
+                                <li class="attractions-03_li03"><h4 id="attractions-03_li03_subTitle" class="subTitle">3. 太陽航行者 ：</h4><h4 id="attractions-03_li03_Text">這是一座象徵性的雕塑，位於海濱，代表著探索和未來的希望，提供了壯觀的海景和城市背景。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d446904.7689996599!2d-22.922219285465818!3d64.05270566492995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x4929fdfce2ab799f%3A0x27f88d0a15c328cd!2z5Yex5aSr5ouJ57at5YWL5ZyL6Zqb5qmf5aC0IOWGsOWztiBLZWZsYXbDrWssIOmDteWNgOe3qOiZnzogMjM1!3m2!1d63.9817117!2d-22.6275776!4m5!1s0x48d674b9eedcedc3%3A0xec912ca230d26071!2z6Zu35YWL6ZuF57at5YWLIOWGsOWztg!3m2!1d64.1469868!2d-21.940755199999998!5e0!3m2!1szh-TW!2shk!4v1769130910599!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/tySlh7Yf4GU?si=kw2CoBJCzBDrH-Iz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./JavaScript/Iceland_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

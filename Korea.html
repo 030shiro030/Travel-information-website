@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/Korea.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+                <br><br><br>
+                <div class="koreaImage_Div">
+                    <img class="koreaImage" src="./images/Korea.jpg">
+                </div>
+                <div class="main">
+                    <br>
+                    <h1 id="attractions-Name">韓國</h1>
+                    <h3 class="h3" id="attractions-Introduction01">韓國是一個充滿活力的國家，擁有悠久的歷史和多元的文化，融合了傳統與現代。從古老的宮殿到現代的都市景觀，這裡展現出獨特的魅力，吸引著來自世界各地的遊客。</h3>
+                    <h3 id="attractions-Introduction02">以下是一些主要的旅遊景點以及它們的歷史和文化詳細介紹：</h3>
+                    <br><br><hr>
+                    <br><br>
+                    <div>
+                        <h2 id="attractions_title" class="attractions_title">旅遊景點</h2>
+                        <div class="attractions-01">
+                            <img class="attractionsImage" src="./images/GyeongbokgungPalace.jpg">
+                            <h2 id="attractions-01_Name">景福宮</h2>
+                            <h4 id="attractions-01_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-01-subTitle01-Text">景福宮是韓國最大的宮殿之一，建於1395年，是李氏朝鮮王朝的主要宮殿。它見證了朝鮮王朝的興衰和歷史變遷，曾經是國王的居住地和政務中心。宮殿在日治時期遭受破壞，經過多次修復，現在成為重要的歷史與文化象徵。</h4><br>
+                            <h4 id="attractions-01_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-01-subTitle02-Text">景福宮不僅是韓國古代宮殿建築的典範，還是韓國文化遺產的代表。其建築風格融合了五千年來的文化傳承，展示了韓國確立的傳統美學。這裡舉辦的傳統音樂和舞蹈表演吸引了大量遊客。</h4><br>
+                            <h4 id="attractions-01_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-01_li01"><h4 id="attractions-01_li01_subTitle" class="subTitle">1. 經典的守門儀式 ：</h4><h4 id="attractions-01_li01_Text">每天在宮殿的正門舉行的守衛換班儀式，吸引了眾多遊客前來觀賞。</h4></li>
+                                <li class="attractions-01_li02"><h4 id="attractions-01_li02_subTitle" class="subTitle">2. 國立民俗博物館 ：</h4><h4 id="attractions-01_li02_Text">位於宮殿內，介紹韓國的民俗和文化，展示傳統生活和風俗。</h4></li>
+                                <li class="attractions-01_li03"><h4 id="attractions-01_li03_subTitle" class="subTitle">3. 青瓦台 ：</h4><h4 id="attractions-01_li03_Text">韓國總統府位於景福宮後面，是一個具有象徵意義的地點。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d404902.2925281621!2d126.38273101143452!3d37.54801494330074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x357b9a833a5efa59%3A0x8d4ba096cb5cbed4!2z5LuB5bed5ZyL6Zqb5qmf5aC0IOWNl-mfkyBJbmNoZW9uLCBKdW5nLWd1LCBHb25naGFuZy1ybywgMjcy!3m2!1d37.458666!2d126.4419679!4m5!1s0x357ca2c74aeddea1%3A0x8b3046532cc715f6!2z5pmv56aP5a6uIOWNl-mfkyBTZW91bCwgSm9uZ25vIERpc3RyaWN0LCBTYWppay1ybywgMTYx!3m2!1d37.579617!2d126.977041!5e0!3m2!1szh-TW!2shk!4v1769084830224!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/WCJ8LWvxJqQ?si=11mYS2VMQ-Mj_Jo-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-02">
+                            <img class="attractionsImage" src="./images/BusanHaeundae.jpg">
+                            <h2 id="attractions-02_Name">釜山海雲台</h2>
+                            <h4 id="attractions-02_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-02-subTitle01-Text">海雲台是釜山最著名的海灘之一，隨著韓國經濟的發展，海雲台的旅遊業在20世紀90年代迅速崛起，成為家庭和遊客的熱門去處。這裡的美景吸引了無數人前來度假，也舉辦了多項國際活動。</h4><br>
+                            <h4 id="attractions-02_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-02-subTitle02-Text">海雲台不僅是一個度假勝地，還是多元文化的體現。從夏季的海灘派對到冬季的燈光節，這裡的活動豐富多彩，展現了釜山的活力。此外，周圍的餐廳和咖啡廳提供新鮮的海鮮和地道美食。</h4><br>
+                            <h4 id="attractions-02_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-02_li01"><h4 id="attractions-02_li01_subTitle" class="subTitle">1. 海雲台市場 ：</h4><h4 id="attractions-02_li01_Text">當地著名的食品市場，遊客可以在這裡品嘗新鮮的生猛海鮮和韓國傳統小吃。</h4></li>
+                                <li class="attractions-02_li02"><h4 id="attractions-02_li02_subTitle" class="subTitle">2. 釜山電影節 ：</h4><h4 id="attractions-02_li02_Text">每年10月舉行的國際電影節，吸引世界各地的影迷和電影工作者。</h4></li>
+                                <li class="attractions-02_li03"><h4 id="attractions-02_li03_subTitle" class="subTitle">3. 海雲台文化村 ：</h4><h4 id="attractions-02_li03_Text">這裡有色彩繽紛的藝術壁畫和手工藝品，是拍照和購物的絕佳地點。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d208723.29036232445!2d128.8968788280141!3d35.174039426991115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x356892c12212f70d%3A0x15a3a9429a8c32ec!2z6YeR5rW35ZyL6Zqb5qmf5aC0IOWNl-mfkyBCdXNhbiwgR2FuZ3Nlby1ndSwgR29uZ2hhbmdqaW5pcC1ybywgMTA4!3m2!1d35.172868799999996!2d128.9471783!4m5!1s0x35688d9fdaeda715%3A0x21c4cd40510865a5!2z5rW36Zuy6Ie65Y2AIOWNl-mfk-mHnOWxseW7o-Wfn-W4gg!3m2!1d35.1719465!2d129.17410379999998!5e0!3m2!1szh-TW!2shk!4v1769084978591!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/sO1eUuRiXBM?si=TB_Pxh1_sbX2Qeov" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-03">
+                            <img class="attractionsImage" src="./images/JeonjuHanokVillage.jpg">
+                            <h2 id="attractions-03_Name">全州韓屋村</h2>
+                            <h4 id="attractions-03_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-03-subTitle01-Text">全州韓屋村擁有200多年的歷史，是韓國傳統建築的縮影。這裡的韓屋（傳統韓國房屋）保存良好，展示了李氏朝鮮時代的生活方式。全州被稱為韓國的食都，以其豐富的傳統飲食文化著稱。</h4><br>
+                            <h4 id="attractions-03_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-03-subTitle02-Text">全州韓屋村是體驗韓國傳統文化的理想地點，遊客可以在這裡了解韓國的歷史、藝術和飲食文化。在這裡，參與者可以體驗韓式茶道、書法等傳統活動，感受日常生活中的韓國風情。</h4><br>
+                            <h4 id="attractions-03_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-03_li01"><h4 id="attractions-03_li01_subTitle" class="subTitle">1. 韓屋 ：</h4><h4 id="attractions-03_li01_Text">村內的韓屋可供遊客參觀及住宿，體驗傳統的生活方式。</h4></li>
+                                <li class="attractions-03_li02"><h4 id="attractions-03_li02_subTitle" class="subTitle">2. 全州百科全書館 ：</h4><h4 id="attractions-03_li02_Text">展示關於全州及韓國的歷史和文化，包括展覽和教育活動。</h4></li>
+                                <li class="attractions-03_li03"><h4 id="attractions-03_li03_subTitle" class="subTitle">3. 全州拌飯 ：</h4><h4 id="attractions-03_li03_Text">當地著名的食品，遊客可以在村內的餐廳嘗試這道色香味俱全的傳統美食。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d818943.3773458622!2d126.13199822297877!3d36.6985963417706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x357b9a833a5efa59%3A0x8d4ba096cb5cbed4!2z5LuB5bed5ZyL6Zqb5qmf5aC0IOWNl-mfkyBJbmNoZW9uLCBKdW5nLWd1LCBHb25naGFuZy1ybywgMjcy!3m2!1d37.458666!2d126.4419679!4m5!1s0x3570236212eebd4b%3A0x8ef4be1bc6d0848e!2z5YWo5bee6Z-T5bGL5p2RIOWNl-mfkyBKZW9uYnVrIFN0YXRlLCBKZW9uanUtc2ksIFdhbnNhbi1ndSwgR2lyaW4tZGFlcm8sIDk5!3m2!1d35.8175376!2d127.1520417!5e0!3m2!1szh-TW!2shk!4v1769085085103!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/lj_SirDl0-o?si=li653M3xzne_Z05j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./JavaScript/Korea_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

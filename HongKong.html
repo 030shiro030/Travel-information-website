@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/HongKong.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+                <br><br><br>
+                <div class="hongKongImage_Div">
+                    <img class="hongKongImage" src="./images/HongKong.jpg">
+                </div>
+                <div class="main">
+                    <br>
+                    <h1 id="attractions-Name">香港</h1>
+                    <h3 class="h3" id="attractions-Introduction01">香港是一個獨特的城市，融合了東西文化，擁有豐富的歷史背景和多樣的旅遊景點。</h3>
+                    <h3 id="attractions-Introduction02">以下是一些主要的旅遊景點以及它們的歷史和文化詳細介紹：</h3>
+                    <br><br><hr>
+                    <br><br>
+                    <div>
+                        <h2 id="attractions_title" class="attractions_title">旅遊景點</h2>
+                        <div class="attractions-01">
+                            <img class="attractionsImage" src="./images/VictoriaHarbour.jpg">
+                            <h2 id="attractions-01_Name">維多利亞港</h2>
+                            <h4 id="attractions-01_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-01-subTitle01-Text">維多利亞港是香港最具代表性的地標之一，自19世紀中期以來便是香港的商業和貿易重心。1842年英國獲得對香港的主權後，維多利亞港迅速成為亞洲重要的貿易港口，促進了香港的經濟發展。</h4><br>
+                            <h4 id="attractions-01_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-01-subTitle02-Text">作為香港的象徵，維多利亞港不僅是商業活動的中心，也是文化交流的重要場所。港口定期舉辦各類活動，如燈光秀和煙花表演，吸引了大量遊客和市民前來觀賞。</h4><br>
+                            <h4 id="attractions-01_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-01_li01"><h4 id="attractions-01_li01_subTitle" class="subTitle">1. 天星小輪 ：</h4><h4 id="attractions-01_li01_Text">是穿梭於港灣兩岸的小船，提供經典的觀光體驗，並能欣賞到香港島和九龍的優美景色。</h4></li>
+                                <li class="attractions-01_li02"><h4 id="attractions-01_li02_subTitle" class="subTitle">2. 星光大道 ：</h4><h4 id="attractions-01_li02_Text">聖約翰港長廊為遊客提供了近距離欣賞維多利亞港的機會，還設有多位香港電影明星的紀念碑。</h4></li>
+                                <li class="attractions-01_li03"><h4 id="attractions-01_li03_subTitle" class="subTitle">3. 幻彩詠香江 ：</h4><h4 id="attractions-01_li03_Text">這是一場每晚定時舉行的燈光秀，結合音樂和燈光，展示香港的繁華夜景。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d472420.8109137072!2d113.71315166388905!3d22.323871795512844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x3403e2f3cc46c69d%3A0xf9f590821892369e!2z6aaZ5riv5ZyL6Zqb5qmf5aC0IOi1pOmxsuinkue_lOWkqei3rzHomZ8!3m2!1d22.3134736!2d113.91372829999999!4m5!1s0x34040113cce77647%3A0x587125733e6b87ae!2z57at5aSa5Yip5Lqe5riv!3m2!1d22.300875899999998!2d114.16696139999999!5e0!3m2!1szh-TW!2shk!4v1769049102235!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/CkqD_Gju9l8?si=hGSHN8KJd8B7Unrq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-02">
+                            <img class="attractionsImage" src="./images/LanKwaiFong.jpg">
+                            <h2 id="attractions-02_Name">中環的蘭桂坊</h2>
+                            <h4 id="attractions-02_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-02-subTitle01-Text">蘭桂坊是香港著名的夜生活區，早在19世紀末就開始發展，吸引了許多外國商人。</h4><br>
+                            <h4 id="attractions-02_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-02-subTitle02-Text">這裡有各式酒吧、餐廳，是社交和休閒的熱點。</h4><br>
+                            <h4 id="attractions-02_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-02_li01"><h4 id="attractions-02_li01_subTitle" class="subTitle">1. 酒吧和餐廳 ：</h4><h4 id="attractions-02_li01_Text">提供多元化的飲食選擇，從本地小吃到高檔餐廳，各式風味應有盡有。</h4></li>
+                                <li class="attractions-02_li02"><h4 id="attractions-02_li02_subTitle" class="subTitle">2. 街頭藝術和音樂表演 ：</h4><h4 id="attractions-02_li02_Text">許多街道上都有藝術作品和街頭表演，增添了區域的活力和趣味。</h4></li>
+                                <li class="attractions-02_li03"><h4 id="attractions-02_li03_subTitle" class="subTitle">3. 定期慶典 ：</h4><h4 id="attractions-02_li03_Text">如音樂節和文化活動以及年度的萬聖節慶祝活動，吸引了許多人參加。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d472436.3483224532!2d113.71352411474108!3d22.31928216247843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x3403e2f3cc46c69d%3A0xf9f590821892369e!2z6aaZ5riv5ZyL6Zqb5qmf5aC0IOi1pOmxsuinkue_lOWkqei3rzHomZ8!3m2!1d22.3134736!2d113.91372829999999!4m5!1s0x3404007c862302b1%3A0x7fce95e19b533509!2z6Jit5qGC5Z2KIOS4reeSsOiYreahguWdijHomZ8!3m2!1d22.2810792!2d114.1554797!5e0!3m2!1szh-TW!2shk!4v1769050628418!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/aGZ7mgXuIjY?si=isFc_RpDXbQQRdIF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-03">
+                            <img class="attractionsImage" src="./images/VictoriaPeak.jpg">
+                            <h2 id="attractions-03_Name">太平山頂</h2>
+                            <h4 id="attractions-03_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-03-subTitle01-Text">太平山頂是香港島的最高點，自19世紀中期以來，便成為英國殖民者的度假勝地。1868年，太平山頂纜車啟用，使得市民和遊客更容易抵達這一景點，並欣賞壯麗的城市全景。在當時，這裡吸引了許多富裕的家庭和觀光客，逐漸發展成為香港的著名旅遊地點。</h4><br>
+                            <h4 id="attractions-03_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-03-subTitle02-Text">太平山頂不僅是觀光的場所，更是香港文化的一部分。隨著城市的発展，這裡成為人們休閒和社交的中心。山頂的廣場經常舉辦各類活動，並是當地和遊客聚會的理想地點。</h4><br>
+                            <h4 id="attractions-03_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-03_li01"><h4 id="attractions-03_li01_subTitle" class="subTitle">1. 山頂纜車 ：</h4><h4 id="attractions-03_li01_Text">提供通往山頂的獨特交通體驗，沿途可欣賞到香港的城市風光。</h4></li>
+                                <li class="attractions-03_li02"><h4 id="attractions-03_li02_subTitle" class="subTitle">2. 觀景台 ：</h4><h4 id="attractions-03_li02_Text">在這裡可以俯瞰到壯觀的維多利亞港、香港島和九龍的景色，夜晚尤其迷人。</h4></li>
+                                <li class="attractions-03_li03"><h4 id="attractions-03_li03_subTitle" class="subTitle">3. 山頂廣場和商場 ：</h4><h4 id="attractions-03_li03_Text">設有多家餐廳、咖啡館和商店，也是品味當地美食的好去處。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d472436.3483224532!2d113.71352411474108!3d22.31928216247843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x3403e2f3cc46c69d%3A0xf9f590821892369e!2z6aaZ5riv5ZyL6Zqb5qmf5aC0IOi1pOmxsuinkue_lOWkqei3rzHomZ8!3m2!1d22.3134736!2d113.91372829999999!4m5!1s0x3403ff89dfbeddb1%3A0x2e318b3c62d99338!2z5aSq5bmz5bGxIOWxsemggg!3m2!1d22.2758835!2d114.14553199999999!5e0!3m2!1szh-TW!2shk!4v1769060385881!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/FsZtnFdD4VE?si=04V2rmmfK2xscpj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./JavaScript/HongKong_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

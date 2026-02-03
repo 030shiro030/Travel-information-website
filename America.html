@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/America.css" />
+</head>
+<body>
+   <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+                <br><br><br>
+                <div class="americaImage_Div">
+                    <img class="americaImage" src="./images/America.jpg">
+                </div>
+                <div class="main">
+                    <br>
+                    <h1 id="attractions-Name">美國</h1>
+                    <h3 class="h3" id="attractions-Introduction01">美國是一個多元文化的國家，擁有豐富的歷史背景和多樣的旅遊景點。作為世界上最大的經濟體之一，美國的城市和景觀展現了不同的文化和生活方式，從繁華的都市到壯麗的自然風光，每個地方都吸引著無數遊客。</h3>
+                    <h3 id="attractions-Introduction02">以下是一些主要的旅遊景點以及它們的歷史和文化詳細介紹：</h3>
+                    <br><br><hr>
+                    <br><br>
+                    <div>
+                        <h2 id="attractions_title" class="attractions_title">旅遊景點</h2>
+                        <div class="attractions-01">
+                            <img class="attractionsImage" src="./images/NewYorkCity.jpg">
+                            <h2 id="attractions-01_Name">紐約市</h2>
+                            <h4 id="attractions-01_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-01-subTitle01-Text">紐約市成立於1624年，最初是一個荷蘭殖民地，被稱為新阿姆斯特丹。1664年，英國接管，改名為紐約。作為美國的經濟、文化和金融中心，紐約市的歷史見證了無數的移民潮和社會變遷。</h4><br>
+                            <h4 id="attractions-01_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-01-subTitle02-Text">紐約市是一個多元文化的熔爐，融合了來自世界各地的文化和藝術。這裡擁有世界一流的博物館、劇院和音樂場所，如大都會藝術博物館和百老匯。</h4><br>
+                            <h4 id="attractions-01_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-01_li01"><h4 id="attractions-01_li01_subTitle" class="subTitle">1. 自由女神像 ：</h4><h4 id="attractions-01_li01_Text">象徵自由和民主，於1886年建成，是美國著名的地標之一。</h4></li>
+                                <li class="attractions-01_li02"><h4 id="attractions-01_li02_subTitle" class="subTitle">2. 中央公園 ：</h4><h4 id="attractions-01_li02_Text">這一城市綠洲提供5公里的步道、湖泊和花園，是當地居民和遊客放鬆身心的理想場所。</h4></li>
+                                <li class="attractions-01_li03"><h4 id="attractions-01_li03_subTitle" class="subTitle">3. 時代廣場 ：</h4><h4 id="attractions-01_li03_Text">被稱為「世界的十字路口」，以燈光和繁華的商業著稱，是觀光和娛樂的集中地。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d193576.42299330843!2d-74.06010361284663!3d40.704110331954695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x89c26650d5404947%3A0xec4fb213489f11f0!2z57SE57-wwrfoj7LojKjlgpHmi4nlvrfCt-eUmOi_uui_quWci-mam-apn-WgtCDnvo7lnIsgTmV3IFlvcmssIFF1ZWVucywg6YO15Y2A57eo6JmfOiAxMTQzMA!3m2!1d40.6446124!2d-73.7797278!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z57SQ57SEIOe-juWci-e0kOe0hA!3m2!1d40.7127753!2d-74.0059728!5e0!3m2!1szh-TW!2shk!4v1769088082633!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/PLrL4TcD5IU?si=xRmiTaG8zl7tpsvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-02">
+                            <img class="attractionsImage" src="./images/YellowstoneNationalPark.jpg">
+                            <h2 id="attractions-02_Name">黃石國家公園</h2>
+                            <h4 id="attractions-02_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-02-subTitle01-Text">黃石國家公園成立於1872年，是美國第一個國家公園，也是世界上第一個國家公園。這裡擁有獨特的地熱特徵和多樣的生態系統，吸引著早期的探險家和自然愛好者。</h4><br>
+                            <h4 id="attractions-02_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-02-subTitle02-Text">黃石公園不僅是自然愛好者的天堂，還是美國國家公園文化運動的象徵。這裡的保護和管理啟發了世界各地的國家公園體系。</h4><br>
+                            <h4 id="attractions-02_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-02_li01"><h4 id="attractions-02_li01_subTitle" class="subTitle">1. 老忠實間歇泉 ：</h4><h4 id="attractions-02_li01_Text">公園內最著名的間歇泉，每隔約90分鐘便會噴發，吸引大量遊客觀賞。</h4></li>
+                                <li class="attractions-02_li02"><h4 id="attractions-02_li02_subTitle" class="subTitle">2. 彩池 ：</h4><h4 id="attractions-02_li02_Text">世界上最大的熱泉之一，以其繽紛的色彩而著稱，展現了細菌和熱水的奇妙組合。</h4></li>
+                                <li class="attractions-02_li03"><h4 id="attractions-02_li03_subTitle" class="subTitle">3. 大棕熊和灰狼觀察 ：</h4><h4 id="attractions-02_li03_Text">這裡的野生動物觀察機會眾多，吸引著希望見識自然生態的遊客。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d719877.108688413!2d-111.52389481239017!3d45.18669228003454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x534538730bf6a29d%3A0xc00073ee50bbeaeb!2z5Y2a6Iyy5pu85qmf5aC0IDU5NzE0576O5ZyLIE1vbnRhbmEsIEJlbGdyYWRlLCBHYWxsYXRpbiBGaWVsZCBSZA!3m2!1d45.7784043!2d-111.1612273!4m5!1s0x5351e55555555555%3A0xaca8f930348fe1bb!2z6buD55-z5ZyL5a625YWs5ZySIOe-juWciw!3m2!1d44.597918199999995!2d-110.56124899999999!5e0!3m2!1szh-TW!2shk!4v1769088182404!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/xjzyCjQ0-qA?si=xPYLSlaMxBhllWdz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+
+                        <br><br>
+                        
+                        <div class="attractions-03">
+                            <img class="attractionsImage" src="./images/GrandCanyonNationalPark.jpg">
+                            <h2 id="attractions-03_Name">大峽谷國家公園</h2>
+                            <h4 id="attractions-03_subTitle01" class="subTitle">歷史: </h4><h4 id="attractions-03-subTitle01-Text">大峽谷國家公園成立於1919年，位於亞利桑那州，是世界七大自然奇觀之一。該地區由科羅拉多河數百萬年沖刷而成，形成了壯麗的地貌。</h4><br>
+                            <h4 id="attractions-03_subTitle02" class="subTitle">文化：</h4><h4 id="attractions-03-subTitle02-Text">大峽谷不僅是自然美景，也具有文化意義。這裡是美國印第安人的故鄉，許多部落對這片土地具有深厚的文化和精神連結。</h4><br>
+                            <h4 id="attractions-03_subTitle03" class="subTitle">景點：</h4>
+                            <ul style="list-style-type:none">
+                                <li class="attractions-03_li01"><h4 id="attractions-03_li01_subTitle" class="subTitle">1. 南緣 ：</h4><h4 id="attractions-03_li01_Text">遊客最常訪問的地區，設有觀景台和步道，可欣賞到日出和日落的壯觀景色。</h4></li>
+                                <li class="attractions-03_li02"><h4 id="attractions-03_li02_subTitle" class="subTitle">2. 北緣 ：</h4><h4 id="attractions-03_li02_Text">相對較少被遊客踏足，提供更寧靜的環境，是徒步旅行愛好者的理想選擇。</h4></li>
+                                <li class="attractions-03_li03"><h4 id="attractions-03_li03_subTitle" class="subTitle">3. 直升機觀光 ：</h4><h4 id="attractions-03_li03_Text">遊客可以選擇乘坐直升機從空中俯瞰大峽谷，俯瞰這一自然奇觀的壯觀。</h4></li>
+                            </ul>
+                            <br><br>
+                            <div class="iframe">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d829438.9648686833!2d-112.64515858349651!3d35.7017171154499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x872d855990476bff%3A0x94b3a664bc5a4cd5!2sFlagstaff%20Pulliam%20Airport%2C%206200%20S%20Pulliam%20Dr%2C%20Flagstaff%2C%20AZ%2086005%E7%BE%8E%E5%9C%8B!3m2!1d35.140295699999996!2d-111.6710476!4m5!1s0x873312ae759b4d15%3A0x1f38a9bec9912029!2z5aSn5bO96LC35ZyL5a625YWs5ZySIOe-juWciyBBcml6b25h!3m2!1d36.2678855!2d-112.3535253!5e0!3m2!1szh-TW!2shk!4v1769088330487!5m2!1szh-TW!2shk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe width="400" height="300" src="https://www.youtube.com/embed/7Ezpmcw8RxA?si=g3a0wpDuKNSWDiGH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <br><br><br><hr>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <script src="./JavaScript/America_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

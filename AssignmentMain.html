@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-hk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel information</title>
+    <meta name="author" content="Mok Chi Him Assignment" />
+    <meta name="description" content="Assignment Travel information" />
+    <link rel="icon" href="images/Shiro_Icon.ico">
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link rel="stylesheet" href="./Css/Main.css" />
+</head>
+<body>
+    <header>
+        <h1 id="header">旅遊資訊</h1>
+        <img class="icon" src="./images/Earth.png">
+
+        <div class="dropdown">
+
+            <nav id="navbar" class="navbar">
+                <a class="navicon" onclick="myFunction()">
+                    <img src="./images/Menu.png">
+                </a>
+                <a id="nav_aboutMe" class="nav_aboutMe" href="./AboutMe.html">關於我</a>
+                <div class="language">
+                    <button class="nav_language_btn" id="language">語言</button>
+                    <div class="language_content">
+                        <button class="language_btn" value="zh" onclick="setLanguage(value)">中文</button>
+                        <button class="language_btn" value="eng" onclick="setLanguage(value)">English</button>
+                        <button class="language_btn" value="jp" onclick="setLanguage(value)">日本語</button>
+                    </div>
+                </div>
+                <div class="all_location">
+                    <button class="all_location_btn" id="all_location">所有地點</button>
+                    <div class="all_location_content">
+
+                        <div class="dropdown_header">
+                            <h3 id="sevenContinents">七大洲</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <div class="asia">
+                                    <button class="asia_btn" id="asia">亞洲</button>
+                                    <div class="asia_content">
+                                        <a href="./HongKong.html" id="hongKong">香港</a>
+                                        <a href="./Japan.html" id="japan">日本</a>
+                                        <a href="./Korea.html" id="southKorea">韓國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="northAmerica">
+                                    <button class="northAmerica_btn" id="northAmerica">北美洲</button>
+                                    <div class="northAmerica_content">
+                                        <a href="./America.html" id="america">美國</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="europe">
+                                    <button class="europe_btn" id="europe">歐洲</button>
+                                    <div class="europe_content">
+                                        <a href="./Iceland.html" id="iceland">冰島</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a id="nav_main" class="nav_main" href="./AssignmentMain.html">首頁</a>
+            </nav>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a id="navside_main" href="./AssignmentMain.html">首頁</a>
+            <a id="languageBtn" onclick="hideSidelanguageUl()">語言</a>
+            <div id="sideNav_language" class="sideNav_language-ul">
+                <ul id="sideNav_language-ul" class="sideNav_language-ul"></ul>
+                    <li><button class="sidelanguage" value="zh" onclick="setLanguage(value)">中文</button></li>
+                    <li><button class="sidelanguage" value="eng" onclick="setLanguage(value)">English</button></li>
+                    <li><button class="sidelanguage" value="jp" onclick="setLanguage(value)">日本語</button></li>
+                </ul>
+            </div>
+            <a id="asiaBtn" onclick="hideSideAsiaUl()">亞洲</a>
+            <div id="sideNav_asia" class="sideNav_asia-ul">
+                <ul id="sideNav_asia-ul" class="sideNav_asia-ul"></ul>
+                    <li><a id="navside_hongKong" href="./HongKong.html">香港</a></li>
+                    <li><a id="navside_japan" href="./Japan.html">日本</a></li>
+                    <li><a id="navside_southKorea" href="./Korea.html">韓國</a></li>
+                </ul>
+            </div>
+            <a id="northAmericaBtn" onclick="hideSideNorthAmericaUl()">北美洲</a>
+            <div id="sideNav_northAmerica" class="sideNav_northAmerica-ul">
+                <ul id="sideNav_northAmerica-ul" class="sideNav_northAmerica-ul"></ul>
+                    <li><a id="navside_america" href="./America.html">美國</a></li>
+                </ul>
+            </div>
+            <a id="europeBtn" onclick="hideSideEuropeUl()">歐洲</a>
+            <div id="sideNav_europe" class="sideNav_europe-ul">
+                <ul id="sideNav_europe-ul" class="sideNav_europe-ul"></ul>
+                    <li><a id="navside_iceland" href="./Iceland.html">冰島</a></li>
+                </ul>
+            </div>
+            
+            <a id="navside_aboutMe" href="./AboutMe.html">關於我</a>
+        </div>
+    </header>
+    <main>
+        <div class="backGroundImage">
+            <div class="container">
+                <div class="slides">
+                    <div class="imageSlider" id="1">
+                        <div class="imageSlider_slides">
+                            <!-- radio button -->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <!-- 圖片 -->
+                            <div class="imageSlide first">
+                                <video alt="" id="imageSlide_image1" autoplay muted>
+                                    <source src="./images/video.mp4">
+                                </video>
+                            </div>
+                            <div class="imageSlide">
+                                <img src="./images/imageSlider_1.png" alt="" id="imageSlide_image2">
+                            </div>
+                            <div class="imageSlide">
+                                <img src="./images/imageSlider_2.png" alt="" id="imageSlide_image3">
+                            </div>
+                            <div class="imageSlide">
+                                <img src="./images/imageSlider_3.png" alt="" id="imageSlide_image4">
+                            </div>
+                            <!-- auto navigation -->
+                            <div class="navigation_auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                            <!-- manual navigation -->
+                            <div class="navigation_manual">
+                                <label for="radio1" id="label_radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                            </div>
+                        </div>
+                        <script src="./JavaScript/ImageSlider.js"></script>
+                    </div>
+                </div>
+
+                
+                <div class="slides">
+                    <br><br><br><br><br><br>
+                    <div class="popularAreas_h1_text-align">
+                        <h1 class="popularAreas_h1" id="popularAreas">熱門地區</h1>
+                    </div>
+                    <div class="popularAreas_image_text-align">
+                        <div class="popularAreas_image">
+                            <div class="images">              
+                                    <a href="./America.html"><img src="./images/na.jpg" style="border-radius: 25px;"></a>
+                                    <h3 class="popularAreas_imageTitle" id="popularAreas_northAmerica">北美</h3>
+                            </div>
+                            <div class="images">              
+                                    <a href="./Iceland.html"><img src="./images/eu.jpg" style="border-radius: 25px;"></a>
+                                    <h3 class="popularAreas_imageTitle" id="popularAreas_europe">歐洲</h3>
+                            </div>
+                            <div class="images">              
+                                    <a href="./HongKong.html"><img src="./images/asia.jpg" style="border-radius: 25px;"></a>
+                                    <h3 class="popularAreas_imageTitle" id="popularAreas_asia">亞洲</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="slides">
+                    
+                </div> -->
+            </div>
+            <div class="divToTop">
+                 <a class="toTop" href="#1">
+                    <img src="./images/TopArrow.png">
+                </a>
+            </div>
+        </div>
+        <script src="./JavaScript/Main_language.js"></script>
+        <script src="./JavaScript/SideNav.js"></script>
+    </main>
+    <footer>
+        Make By Mok Chi Him
+    </footer>
+</body>
+</html>

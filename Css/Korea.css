@@ -1,0 +1,101 @@
+h1, h2, h3, h4{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(241, 93, 185);
+}
+
+.main{
+    margin-bottom: 50px;
+}
+
+.main h1{
+    margin-left: 3%;
+}
+
+.main h3,.main h4{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.main .h3{
+    margin-top: 10px;
+    
+}
+
+.main h2{
+    margin-left: 3%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.main .subTitle{
+    margin-bottom: 5px;
+}
+
+.main .attractions_title{
+    margin-top: 0;
+}
+
+.koreaImage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 6px solid white;
+}
+
+li{
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+iframe{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0px 10px rgb(255, 255, 255);
+}
+
+.attractionsImage{
+    margin-left: 5%;
+    height: 300px;
+    border-radius: 20px;
+    border: 10px solid white;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+hr{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border: 2px solid white;
+    box-shadow: 0 20px 20px -20px rgb(0, 0, 0);
+    border: 0;
+    color: #ffffffe8;
+    background: linear-gradient(currentColor, currentColor) no-repeat center;
+    background-size: calc(100% - 1.5em - 6px) 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+hr::before,
+hr::after {
+    content: '';
+    display: block;
+    width: .75em; 
+    height: .75em;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.backGroundImage{
+    /* 重點不可以改 */
+    height: 100%;
+}
