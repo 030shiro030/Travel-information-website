@@ -1,5 +1,4 @@
 # Travel-information-website
-  Travel information website  
 ## 簡介
   你好, 這個專案係我係ERB前端網站開發人員入面的一份個人功課
 ## 功課要求
