@@ -1,5 +1,5 @@
 # Travel-information-website
-預覽 : [my-go-link]: https://030shiro030.github.io/Travel-information-website/AssignmentMain.html
+預覽 : [go] (https://030shiro030.github.io/Travel-information-website/AssignmentMain.html) {:target="_blank"}
 ## 簡介
   你好, 這個專案係我係ERB前端網站開發人員入面的一份個人功課
 ## 功課要求
